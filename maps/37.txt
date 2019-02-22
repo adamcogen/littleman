@@ -1,0 +1,79 @@
+100 100
+45 61
+n n 38 36
+60
+-12 -14 125 127 0 0 51 204 255
+20 67 13 12 3 0 255 255 255
+24 61 16 14 3 0 255 255 255
+26 71 13 14 3 0 255 255 255
+33 71 17 16 3 0 255 255 255
+39 73 12 11 3 0 255 255 255
+40 63 12 13 3 0 255 255 255
+42 67 13 13 3 0 255 255 255
+33 66 15 13 3 0 255 255 255
+32 59 13 10 3 0 255 255 255
+45 95 10 2 0 1 120 0 0
+45 90 10 2 0 1 120 0 0
+45 85 10 2 0 1 120 0 0
+45 80 10 2 0 1 120 0 0
+45 75 10 2 0 1 120 0 0
+45 70 10 2 0 1 120 0 0
+45 65 10 2 0 1 120 0 0
+45 60 10 2 0 1 120 0 0
+45 55 10 2 0 1 120 0 0
+45 50 10 2 0 1 120 0 0
+45 45 10 2 0 1 120 0 0
+45 40 10 2 0 1 120 0 0
+45 35 10 2 0 1 120 0 0
+45 30 10 2 0 1 120 0 0
+45 25 10 2 0 1 120 0 0
+45 20 10 2 0 1 120 0 0
+45 15 10 2 0 1 120 0 0
+45 10 10 2 0 1 120 0 0
+45 5 10 2 0 1 120 0 0
+45 0 10 2 0 1 120 0 0
+45 -5 10 2 0 1 120 0 0
+45 -10 10 2 0 1 120 0 0
+45 -15 10 2 0 1 120 0 0
+45 -20 10 2 0 1 120 0 0
+53 -20 2 140 0 1 120 0 0
+45 -20 2 140 0 1 120 0 0
+84 52 25 15 4 0 255 255 255
+89 48 15 10 4 0 255 255 255
+82 52 16 11 4 0 255 255 255
+80 57 18 10 4 0 255 255 255
+84 60 16 11 4 0 255 255 255
+91 64 13 10 4 0 255 255 255
+96 50 16 11 4 0 255 255 255
+102 56 12 13 4 0 255 255 255
+101 63 9 10 4 0 255 255 255
+19 14 28 9 4 0 255 255 255
+37 11 13 9 4 0 255 255 255
+36 15 16 10 4 0 255 255 255
+31 18 16 11 4 0 255 255 255
+20 18 12 11 4 0 255 255 255
+26 6 15 13 4 0 255 255 255
+16 11 14 10 4 0 255 255 255
+17 8 12 10 4 0 255 255 255
+13 16 14 10 4 0 255 255 255
+-5 38 8 7 3 0 255 255 255
+-6 42 11 8 3 0 255 255 255
+-8 46 11 9 3 0 255 255 255
+73 -9 14 13 3 0 255 255 255
+64 -8 17 10 3 0 255 255 255
+82 -7 10 9 3 0 255 255 255
+0
+
+//file format:
+
+mapWidth mapHeight
+spawnPointX spawnPointY
+edgeWarpLeftMap edgeWarpRightMap edgeWarpUpMap edgeWarpDownMap //n means none, player just warps to opposite side of current map
+numberOfShapesToReadFromTheFile
+topLeftCornerX topLeftCornerY width height collision climbability r g b //each of these lines represents one shape
+warpCount
+warpToMapNum warpToXCoord warpToYCoord //n means warp destination is the same as current map
+
+//collision can be: 0 (no collision, draw behind char), 1 (collision), 2 (no collision, draw in front of char), 3 (no collision oval, draw behind char), 4 (no collision oval, draw in front of char), or 5 (warp. is not drawn, but will teleport the player).
+//climbable can be: 0 (can't climb), 1 (can ladder climb, no gravity applies), 2 (can climb, slow gravity applies), or 3 (can jump climb, no gravity applies). anything greater than or eqaul to 10 is to keep track of which warp is assigned to which warp recangle (10 = warp 0, 11 = warp 1, etc.).
+

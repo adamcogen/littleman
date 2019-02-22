@@ -1,0 +1,28 @@
+430 210
+94 110
+n n n n
+10
+-7 -11 448 230 0 0 255 255 255
+-9 130 447 85 1 0 204 255 204
+261 85 17 55 1 1 204 255 204
+271 114 25 20 0 1 204 255 204
+52 81 14 55 1 3 204 255 204
+31 112 24 18 0 3 204 255 204
+31 103 11 32 0 3 204 255 204
+160 104 28 30 0 2 204 255 204
+374 72 21 71 1 1 204 255 204
+374 71 21 1 1 3 255 51 153
+0
+
+//file format:
+
+mapWidth mapHeight
+spawnPointX spawnPointY
+numberOfShapesToReadFromTheFile
+topLeftCornerX topLeftCornerY width height collision climbability r g b //each of these lines represents one shape
+warpCount
+warpToMapNum warpToXCoord warpToYCoord
+
+//collision can be: 0 (no collision, draw behind char), 1 (collision), 2 (no collision, draw in front of char), 3 (no collision oval, draw behind char), 4 (no collision oval, draw in front of char), or 5 (warp. is not drawn, but will teleport the player).
+//climbable can be: 0 (can't climb), 1 (can ladder climb, no gravity applies), 2 (can climb, slow gravity applies), or 3 (can jump climb, no gravity applies). anything greater than or eqaul to 10 is to keep track of which warp is assigned to which warp recangle (10 = warp 0, 11 = warp 1, etc.).
+
