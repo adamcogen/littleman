@@ -45,18 +45,25 @@ The game engine and map maker support the following features:
 * In addition to drawing rectangles, the user can also draw ovals
 * Adjustable 24-bit shape colors (the map maker has a fully functioning color chooser, which you can access by clicking on the color preview in the tool box)
 
-* Layering: all shapes can be placed in front of or behind the sprite, and shapes can be placed in front of or behind each other. Here is an example of a map with one oval drawn in front of the player (left), and one oval drawn behind the player (right):
+* Layering: all shapes can be placed in front of or behind the sprite, and shapes can be placed in front of or behind each other. 
+
+	Here is an example of a map with one oval drawn in front of the player (left), and one oval drawn behind the player (right):
 
 	![Ovals and block layering](images/ovals_and_layering.gif "Ovals and block layering")
 
 * Two types of "warps" (teleportation mechanisms that can be placed in maps)
-	* Edge warps: walking off the edge of a map will place you on the opposite side of another (or the same) map, as if you had walked from one map to another and the maps were scrolling. Edge warps can be optionally added to the top, bottom, left, and/or right edges of a map. An example of edge warps (this map has edge warps on the top and bottom edges, and none on the left and right edges):
+	* Edge warps: walking off the edge of a map will place you on the opposite side of another (or the same) map, as if you had walked from one map to another and the maps were scrolling. Edge warps can be optionally added to the top, bottom, left, and/or right edges of a map. 
+	
+		An example of edge warps (this map has edge warps on the top and bottom edges, and none on the left and right edges):
 
-	![Edge warps](images/clouds.gif "Edge warps")
+		![Edge warps](images/clouds.gif "Edge warps")
 
-	* In-map warps: non-visible rectangles that cause the player to be automatically teleported to another position on another (or the same) map when the player walks into them. These are useful for doors, portals, etc. An example of in-map warps in action:
+	* In-map warps: non-visible rectangles that cause the player to be automatically teleported to another position on another (or the same) map when the player walks into them. These are useful for doors, portals, etc. 
+	
+		An example of in-map warps in action:
 
-	![Pipes using in-map warps](images/pipes.gif "Pipes using in-map warps")
+		![Pipes using in-map warps](images/pipes.gif "Pipes using in-map warps")
+		
 * Many useful features implemented in the map maker, including: easily draw and edit maps with all of the aforementioned features, draw player sprite previews for comparing player size to map scale, edit all properties of existing shapes, modify shape layering/ordering, an undo button for shape drawing mode, and more.
 
 ##### Debugging and settings: #####
