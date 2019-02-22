@@ -1,7 +1,7 @@
 # Littleman's World Builder #
 
 #### Note: ####
-This is a very old project. It has not been updated since I first worked on it, which was at a time when I had much less experience as a programmer than I do now. For a much better implementation of a technically similar but aesthetically very different project, see the spiritual successor to this project, Bouncing Ball. I have kept this project up because I put a lot of work into it and I still think the finished product is neat, despite the many flaws in its design and implementation.
+This is a very old project. It has not been updated since I first worked on it, which was at a time when I had much less experience as a programmer than I do now. For a much better implementation of a technically similar but aesthetically very different project, see the spiritual successor to this project, [Bouncing Ball Physics Simulator](https://github.com/adamcogen/bouncing-ball). I have kept this project up because I put a lot of work into it and I still think the finished product is neat, despite the many flaws in its design and implementation.
 
 ![Drawing with the map maker](images/map_maker_draw_2.gif "Drawing with the map maker")
 
@@ -134,4 +134,4 @@ I'm not working on this project anymore, but some areas that could use improveme
 * Simpler user interface for the map maker, and more thorough documentation / help pages for all of its features
 * In general, the code would greatly benefit from being reorganized and refactored.
 
-As mentioned earlier, the mistakes made on this project informed the  Bouncing Ball project.
+As mentioned earlier, the mistakes made on this project informed the [Bouncing Ball Physics Simulator](https://github.com/adamcogen/bouncing-ball) project.
