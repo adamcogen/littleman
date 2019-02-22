@@ -3,10 +3,10 @@
 #### Note: ####
 This is a very old project. It has not been updated since I first worked on it, which was at a time when I had much less experience as a programmer than I do now. For a much better implementation of a technically similar but aesthetically very different project, see the spiritual successor to this project, Bouncing Ball. I have kept this project up because I put a lot of work into it and I still think the finished product is neat, despite the many flaws in its design and implementation.
 
-![Drawing with the map maker](\images\map_maker_draw.gif "Drawing with the map maker")
+![Drawing with the map maker](images/map_maker_draw.gif "Drawing with the map maker")
 
-![Gameplay on an ocean-themed map](\images\ocean_map.gif "Gameplay on an ocean-themed map")
-![Gameplay on a space-themed map](\images\space_map.gif "Gameplay on a space-themed map")
+![Gameplay on an ocean-themed map](images/ocean_map.gif "Gameplay on an ocean-themed map")
+![Gameplay on a space-themed map](images/space_map.gif "Gameplay on a space-themed map")
 
 ## Purpose ##
 
@@ -18,8 +18,8 @@ The result of this endeavor was a simple "platformer" style game engine made com
 
 The player has a two frame walking animation, which is made with the ASCII characters `O o H -` and `O o X ~` respectively.
 
-![First frame of player walking animation](\images\walk_0.png "First frame of player walking animation")
-![Second frame of player walking animation](\images\walk_1.png "Second frame of player walking animation")
+![First frame of player walking animation](images/walk_0.png "First frame of player walking animation")
+![Second frame of player walking animation](images/walk_1.png "Second frame of player walking animation")
 
 ## Features ##
 
@@ -34,37 +34,37 @@ The game engine and map maker support the following features:
 	* "Climbability" (i.e. can a shape be climbed?)
 		* Ladder climb: player can climb one step at a time, like climbing a ladder or a rock wall
 
-		![Ladder climb](\images\ladder_climb.gif "Ladder climb")
+		![Ladder climb](images/ladder_climb.gif "Ladder climb")
 		* Jump climb: player can climb more quickly by jumping instead of taking single steps upwards
 
-		![Jump climb](\images\jump_climb.gif "Jump climb")
+		![Jump climb](images/jump_climb.gif "Jump climb")
 		* Watery: player can climb, but will slowly sink back down, like swimming in water
 
-		![Watery climb](\images\water_climb.gif "Watery climb")
+		![Watery climb](images/water_climb.gif "Watery climb")
 
 * In addition to drawing rectangles, the user can also draw ovals
 * Adjustable 24-bit shape colors (the map maker has a fully functioning color chooser, which you can access by clicking on the color preview in the tool box)
 
 * Layering: all shapes can be placed in front of or behind the sprite, and shapes can be placed in front of or behind each other. Here is an example of a map with one oval drawn in front of the player (left), and one oval drawn behind the player (right):
 
-	![Ovals and block layering](\images\ovals_and_layering.gif "Ovals and block layering")
+	![Ovals and block layering](images/ovals_and_layering.gif "Ovals and block layering")
 
 * Two types of "warps" (teleportation mechanisms that can be placed in maps)
 	* Edge warps: walking off the edge of a map will place you on the opposite side of another (or the same) map, as if you had walked from one map to another and the maps were scrolling. Edge warps can be optionally added to the top, bottom, left, and/or right edges of a map. An example of edge warps (this map has edge warps on the top and bottom edges, and none on the left and right edges):
 
-	![Edge warps](\images\clouds.gif "Edge warps")
+	![Edge warps](images/clouds.gif "Edge warps")
 
 	* In-map warps: non-visible rectangles that cause the player to be automatically teleported to another position on another (or the same) map when the player walks into them. These are useful for doors, portals, etc. An example of in-map warps in action:
 
-	![Pipes using in-map warps](\images\pipes.gif "Pipes using in-map warps")
+	![Pipes using in-map warps](images/pipes.gif "Pipes using in-map warps")
 * Many useful features implemented in the map maker, including: easily draw and edit maps with all of the aforementioned features, draw player sprite previews for comparing player size to map scale, edit all properties of existing shapes, modify shape layering/ordering, an undo button for shape drawing mode, and more.
 
 ##### Debugging and settings: #####
 * Turn off incrementing acceleration due to gravity by setting the value of `boolean USE_GRAVITY_ACCELERATION` to false in the `GameState.java` class. There are also some other settings affecting acceleration due to gravity that you will find adjacent to this field.
 * Display the player's hit box by changing the value of `boolean SHOW_HIT_BOX` to true in the `GameWindow.java` class. The hit box is a red square that indicates the collision and climbing area of the player. This is useful for debugging collision and climbing issues. See the variable's comments in the code for more specific details. The hit box looks like this:
 
-	![Hit box on the first frame of player walking animation](\images\hitbox_0.png "First frame of player walking animation")
-	![Hit box on the second frame of player walking animation](\images\hitbox_1.png "Second frame of player walking animation")
+	![Hit box on the first frame of player walking animation](images/hitbox_0.png "First frame of player walking animation")
+	![Hit box on the second frame of player walking animation](images/hitbox_1.png "Second frame of player walking animation")
 
 ## Getting Started ##
 The map maker can be launched by running the MapMaker class, and the actual game can be launched by running the GameState class. To change the starting map file, edit the field variable `int map` in the GameState.java class to have the value of the desired map number.
@@ -92,15 +92,15 @@ Map files are saved as plaintext. The format of a map file is as follows (replac
 
 Using edit mode in the map maker to modify existing shapes:
 
-![Edit mode in the map maker](\images\map_maker_edit.png "Edit mode in the map maker")
+![Edit mode in the map maker](images/map_maker_edit.png "Edit mode in the map maker")
 
 Gameplay on a simple map:
 
-![Gameplay](\images\gameplay.gif "Gameplay")
+![Gameplay](images/gameplay.gif "Gameplay")
 
 The window that the game runs in:
 
-![The game window](\images\game_window.png "The game window")
+![The game window](images/game_window.png "The game window")
 
 ## Built-In Maps List ##
 
