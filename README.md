@@ -52,7 +52,7 @@ The game engine and map maker support the following features:
 	![Ovals and block layering](images/ovals_and_layering.gif "Ovals and block layering")
 
 * Two types of "warps" (teleportation mechanisms that can be placed in maps)
-	* Edge warps: walking off the edge of a map will place you on the opposite side of another (or the same) map, as if you had walked from one map to another and the maps were scrolling. Edge warps can be optionally added to the top, bottom, left, and/or right edges of a map. 
+	* Edge warps: walking off the edge of a map will place you on the opposite side of another (or the same) map, as if you had walked from one map to another and the maps were scrolling. Edge warps can be optionally added to the top, bottom, left, and/or right edges of a map. Maps with no edge warps defined automatically wrap the player back to the opposite side of the map when they walk off the edge. 
 	
 		An example of edge warps (this map has edge warps on the top and bottom edges, and none on the left and right edges):
 
